@@ -21,7 +21,10 @@
                     xfbml: true,
                     version: "v2.6"
                   });
-            
+                  
+                  FB.Event.subscribe("send_to_messenger", () => {
+                    alert("oh")
+                })
                 };
             
                 (function(d, s, id){
@@ -32,9 +35,7 @@
                    fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));
 
-                FB.Event.subscribe("send_to_messenger", () => {
-                    alert("oh")
-                })
+               
             
     </script>
 </body>
